@@ -89,6 +89,14 @@ section h2 {
     background-color: #555;
 }
 
+.top-nav-menu {
+    text-align: left;
+}
+
+#frBtn {
+    text-align: right;
+}
+
 footer {
     background-color: #333;
     color: #fff;
