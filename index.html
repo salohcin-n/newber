@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nick - Portfolio</title>
+    <title>NEWBER</title>
     <link rel="stylesheet" href="css/main.css"> <!-- Link to your CSS file -->
-    <script src="js/language-translation.js" defer></script>
+    <script src="js/dropdown.js"></script>
+    <!-- <script src="js/language-translation.js" defer></script> -->
     <!-- You can add additional meta tags, stylesheets, or scripts here -->
 </head>
 <body>
@@ -18,15 +19,17 @@
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-                <button id="translateButton">Translate HTML</button>
+                <!-- <button id="translateButton">Translate</button> -->
             </nav>
         </div>
     </header>
 
     <section id="about">
         <div class="container">
-            <h2>About</h2>
-            <p>Welcome to my portfolio website.</p>
+            <h2 class="dropdown-btn btn">About</h2>
+            <div class="dropdown-content">
+                <p>Welcome to my portfolio website.</p>
+            </div>
         </div>
     </section>
 
@@ -43,11 +46,13 @@
 
     <section id="contact">
         <div class="container">
-            <h2>Contact Me</h2>
-            <p>
-                Nick<br>
-                <a href="mailto:nicknewbery97@gmail.com">Email</a><br>
-            </p>
+            <h2 class="dropdown-btn btn">Contact</h2>
+            <div class="dropdown-content">
+                <p>
+                    Newber<br>
+                    <a href="mailto:nicknewbery97@gmail.com">Email</a><br>
+                </p>
+            </div>
         </div>
     </section>
 
