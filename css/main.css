@@ -1,28 +1,31 @@
 /* Reset default browser styles */
-html, body, h1, h2, h3, p, ul, li {
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /* Set up basic typography */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: #FBEEC1; /* Pale Yellow */
     color: #333;
 }
 
 .btn {
-    background-color: black;
-    color: azure;
+    background-color: #8D8741; /* Olive Green */
+    color: #fff;
     text-align: center;
     padding: 10px;
     font-size: 16px;
-    max-width: 100px; 
-    width: auto; 
-    overflow: hidden; 
-    text-overflow: ellipsis; 
-    white-space: nowrap; 
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #BC986A; /* Darker Olive Green */
 }
 
 .container {
@@ -37,89 +40,86 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: #659DBD; /* Sky Blue */
     color: #fff;
     padding: 20px 0;
+    text-align: center;
+    background-image: url('mountains.jpg'); /* Mountainous landscape image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px; /* Adjust the height of the header */
+    position: relative;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Overlay color for better readability of text */
 }
 
 header h1 {
-    font-size: 2rem;
-    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    z-index: 1; /* Ensure text is above the overlay */
 }
 
 nav ul {
     list-style-type: none;
-    text-align: center;
+    z-index: 1; /* Ensure navigation is above the overlay */
 }
 
 nav ul li {
     display: inline;
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    color: #DAAD86; /* Light Brown */
 }
 
 section {
-    padding: 40px 0;
+    padding: 60px 0;
+    text-align: center;
 }
 
 section h2 {
-    text-align: left;
+    font-size: 2.5rem;
     margin-bottom: 30px;
+    color: #8D8741; /* Olive Green */
 }
 
-.project {
-    background-color: #fff;
-    border-radius: 5px;
-    padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
+.dropdown-btn {
+    cursor: pointer;
 }
 
-.project h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-.project p {
-    margin-bottom: 10px;
-}
-
-.project a {
-    display: inline-block;
-    padding: 8px 16px;
-    background-color: #333;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.project a:hover {
-    background-color: #555;
-}
-
-.top-nav-menu {
-    text-align: left;
-}
-
-#frBtn {
-    text-align: right;
+.dropdown-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333;
 }
 
 footer {
-    background-color: #333;
+    background-color: #659DBD; /* Sky Blue */
     color: #fff;
     text-align: center;
     padding: 20px 0;
+}
+
+footer p {
+    font-size: 1rem;
 }
 
 /* Media query for smaller resolutions */
