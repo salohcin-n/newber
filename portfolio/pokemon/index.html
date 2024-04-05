@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+  <script type="module" src="js/generator.mjs"></script>
+  <title>Random Pokemon Generator</title>
+</head>
+<body>
+  <div class="pokedex-container"> <!-- Changed class name to pokedex-container -->
+    <div class="pokedex">
+      <h1>Pokédex</h1> <!-- Changed title to Pokédex -->
+      <div id="pokemonInfo" class="pokemon-info">
+        <div class="info">
+            <p></p>
+        </div>
+        <div class="image-container" style="display: none;">
+            <img id="pokemonImage" src="" alt="" width="200" height="200">
+        </div>
+    </div>
+      <div class="controls">
+        <button id="generateBtn">Generate Random Pokémon</button> <!-- Updated button text -->
+        <button id="compareBtn">Compare Pokémon</button> <!-- Updated button text -->
+      </div>
+      <div class="region-dropdown">
+        <!--<label for="regionSelect">Select Region:</label>
+         <select id="regionSelect">
+          <option value="kanto">Kanto</option>
+          <option value="johto">Johto</option>
+          <option value="hoenn">Hoenn</option>
+        </select> -->
+      </div>
+      <div id="comparisonList" style="display: none;">
+        <h2>Select Pokémon for Comparison:</h2> <!-- Updated heading text -->
+        <input type="text" id="searchInput" placeholder="Search by ID or Pokémon name"> <!-- Updated placeholder text -->
+        <select id="pokemonDropdown" size="10"></select>
+      </div>
+    </div>  
+  </div>
+</body>
+</html>

@@ -1,0 +1,95 @@
+body {
+  background-color: #f0f0f0; /* Light gray background */
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.pokedex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.pokedex {
+  background-color: #f8f8f8; /* Light gray background */
+  border: 10px solid #d4d4d4; /* Light gray border */
+  border-radius: 20px;
+  padding: 20px;
+  max-width: 25%;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+h1 {
+  font-size: 32px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #333; /* Dark gray text */
+}
+
+.pokemon-info {
+  display: flex;
+}
+
+.info {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container img {
+  max-width: 100%; /* Ensures image does not exceed container */
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+button {
+  background-color: #4CAF50; /* Green button */
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 10px;
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+}
+
+button#compareBtn {
+  background-color: #008CBA; /* Blue button */
+}
+
+button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+#comparisonList {
+  margin-top: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-top: 0;
+  color: #333; /* Dark gray text */
+}
+
+#searchInput, #pokemonDropdown {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  padding: 8px;
+  width: 100%;
+}

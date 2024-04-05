@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@angular/common": "^17.2.1",
+    "@angular/core": "^17.2.1",
+    "@angular/router": "^17.2.1",
+    "node-fetch": "^3.3.2"
+  }
+}
