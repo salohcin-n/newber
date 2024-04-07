@@ -3,40 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/main.css">
-  <script type="module" src="./pokemon/js/generator.mjs"></script>
-  <title>Random Pokemon Generator</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Portfolio</title>
 </head>
 <body>
-  <div class="pokedex-container"> <!-- Changed class name to pokedex-container -->
-    <div class="pokedex">
-      <h1>Pokédex</h1> <!-- Changed title to Pokédex -->
-      <div id="pokemonInfo" class="pokemon-info">
-        <div class="info">
-            <p></p>
+  <div class="container">
+    <div class="row">
+        <!-- Project Card 1 -->
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><a href="./pokemon/index.html">Pokemon Generator</a></h3>
+                </div>
+                <div class="panel-body">
+                    <p></a></p>
+                </div>
+            </div>
         </div>
-        <div class="image-container" style="display: none;">
-            <img id="pokemonImage" src="" alt="" width="200" height="200">
+        <!-- Project Card 2 -->
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Project 2</h3>
+                </div>
+            </div>
+        </div>
+        <!-- Project Card 3 -->
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Project 3</h3>
+                </div>
+            </div>
         </div>
     </div>
-      <div class="controls">
-        <button id="generateBtn">Generate Random Pokémon</button> <!-- Updated button text -->
-        <button id="compareBtn">Compare Pokémon</button> <!-- Updated button text -->
-      </div>
-      <div class="region-dropdown">
-        <!--<label for="regionSelect">Select Region:</label>
-         <select id="regionSelect">
-          <option value="kanto">Kanto</option>
-          <option value="johto">Johto</option>
-          <option value="hoenn">Hoenn</option>
-        </select> -->
-      </div>
-      <div id="comparisonList" style="display: none;">
-        <h2>Select Pokémon for Comparison:</h2> <!-- Updated heading text -->
-        <input type="text" id="searchInput" placeholder="Search by ID or Pokémon name"> <!-- Updated placeholder text -->
-        <select id="pokemonDropdown" size="10"></select>
-      </div>
-    </div>  
   </div>
 </body>
 </html>
