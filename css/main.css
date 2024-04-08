@@ -45,7 +45,7 @@ header {
     color: #fff;
     padding: 20px 0;
     text-align: center;
-    background-image: url('mountains.jpg'); /* Mountainous landscape image */
+    background-image: url('/images/river-tree-landscape.jpg'); /* Mountainous landscape image */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
