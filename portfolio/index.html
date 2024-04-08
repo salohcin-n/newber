@@ -3,40 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <title>Portfolio</title>
 </head>
-<body>
-  <div class="container">
-    <div class="row">
-        <!-- Project Card 1 -->
-        <div class="col-md-4">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title"><a href="./pokemon/index.html">Pokemon Generator</a></h3>
-                </div>
-                <div class="panel-body">
-                    <p></a></p>
-                </div>
-            </div>
-        </div>
-        <!-- Project Card 2 -->
-        <div class="col-md-4">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">Project 2</h3>
+<body class="bg-secondary">
+    <div class="container bg-info">
+        <div class="row">
+            <div class="col-sm-4 d-flex align-items-stretch">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Pokemon Generator</h5>
+                        <p class="card-text">A random Pokemon generator that displays stats/data on the generated Pokemon. This project is built with JavaScript/Ajax and uses a public api to fetch data.</p>
+                        <a href="./pokemon/index.html" class="btn btn-primary">Pokemon Generator</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- Project Card 3 -->
-        <div class="col-md-4">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">Project 3</h3>
+            <div class="col-sm-4 d-flex align-items-stretch">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Data Scraper</h5>
+                        <p class="card-text">A practice data scraper using Python paired with Selenium to extract grocery prices.<br>
+                            Dashboard link coming soon.
+                        </p>
+                        <a href="#" class="btn btn-primary">Coming soon</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 d-flex align-items-stretch">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Coming soon</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Coming soon</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-  </div>
 </body>
 </html>
