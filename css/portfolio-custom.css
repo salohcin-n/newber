@@ -2,7 +2,7 @@ body{background: #161616;}
 header{text-align: center;}
 h1{color:#fff;}
 .lead{color:#aaa;}
-.wrapper{margin:10vh}
+.wrapper{margin:2%}
 .card{
   border: none;
   transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
